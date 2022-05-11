@@ -2,7 +2,7 @@
   <div>
     <h1>Reaction Timer</h1>
     <p>Try to click the appearing green block as fast you can!!!</p>
-    <p>I`ll rank you after.</p>
+    <p>I`ll rank you after that.</p>
     <button @click="start" :disabled="isPlaying">Play</button>
     <Block v-if="isPlaying" :delay="delay" @end="endGame"/>
     <Results v-if="showResults" :score="score"/>
